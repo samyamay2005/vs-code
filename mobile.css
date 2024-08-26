@@ -16,15 +16,16 @@ body {
 .container {
     display: flex;
     align-items: center;
-    margin: 0px 30px 0px 150px;
+    margin: 0px 20px 0px 20px;
+    flex-wrap: wrap;
 }
 
 .nav_items {
-    padding: 20px 10px 0px 10px;
-    margin: 20px 0px 0px 0px;
+    padding: 15px 5px 0px 5px;
+    margin: 10px 0px 0px 0px;
     text-decoration: none;
     color: #B0B0B0;
-    font-size: large;
+    font-size: medium;
 }
 
 .nav_items:hover {
@@ -33,22 +34,27 @@ body {
 
 .vscode {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_image {
-    padding: 19px 10px 10px 10px;
+    padding: 15px 5px 10px 5px;
 }
 
 .nav_name {
     font-weight: 500;
-    font-size: large;
-    padding: 0px 20px 0px 0px;
+    font-size: medium;
+    padding: 0px 10px 0px 0px;
     color: #FFFFFF;
 }
 
 .search_download {
     display: flex;
-    margin: 0px 0px 0px 200px;
+    margin: 10px 0px 0px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .darkmode {
@@ -57,7 +63,7 @@ body {
 
 .search {
     padding: 5px;
-    font-size: 90%;
+    font-size: 80%;
     margin: 0px 10px 0px 0px;
     background-color: #333333;
     color: #E0E0E0;
@@ -82,11 +88,11 @@ input:focus {
     display: flex;
     border: 2px solid #3B86FF;
     border-radius: 5px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 .Download_button {
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px;
     border-radius: 3px;
     background-color: #0068FF;
     color: white;
@@ -99,7 +105,7 @@ input:focus {
 
 .update {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: smaller;
     color: #B0B0B0;
 }
@@ -110,142 +116,70 @@ input:focus {
 
 .vs_code {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     color: #FFFFFF;
 }
 
 .heading_main {
-    margin: 0px 0px -30px 0px;
+    margin: 0px 0px -20px 0px;
     font-weight: 500;
     color: #FFFFFF;
 }
 
 .para_under_vscode {
-    margin: -30 0px 0px 0px;
-    font-size: 20px;
+    margin: -20px 0px 0px 0px;
+    font-size: 18px;
     color: #B0B0B0;
 }
 
 .OS {
-    margin: 0px 110px 0px 215px;
+    margin: 0px 50px;
     text-align: center;
     display: flex;
-}
-
-.windows {
-    vertical-align: top;
-    display: inline-block;
-    padding: 25px;
-    font-size: large;
-    color: #E0E0E0;
-}
-
-.windows_logo {
-    margin: 55px 0px 40px 0px;
-}
-
-.downloads {
-    border-radius: 5px;
-    background-color: #0B68FE;
-    color: white;
-    padding: 5px 20px 5px 20px;
-    margin: -21px 22px 11px 20px;
-}
-
-.versions {
-    background-color: #1975FF;
-    padding: 2px;
-    border-radius: 3px;
-    text-decoration: none;
-    color: white;
-}
-
-.table {
-    border: none;
-    table-layout: none;
-}
-
-.linux {
-    padding: 32px 18px 10px 27px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+.windows, .linux, .mac_logo {
+    padding: 20px;
+    font-size: medium;
+    text-align: center;
     color: #E0E0E0;
 }
 
-.downloads_linux {
+.downloads, .downloads_linux, .downloads-mac {
     border-radius: 5px;
     background-color: #0B68FE;
     color: white;
-    padding: 5px 20px 5px 20px;
-    margin: -21px 22px 11px 20px;
-}
-
-.linux_image {
-    margin: 18px;
-}
-
-.mac_logo {
-    margin: 49px 0px 49px 0px;
-}
-
-.mac_downloads {
-    padding: 0px 0px 0px 0px;
-}
-
-.downloads-mac {
-    border-radius: 5px;
-    background-color: #0B68FE;
-    color: white;
-    padding: 1px 45px 0px 35px;
-    margin: -21px 54px 0px 70px;
+    padding: 5px 20px;
+    margin: 10px 0px;
 }
 
 .privacy_statement {
     text-align: center;
-    margin: 50px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: #B0B0B0;
 }
 
 .updates {
     display: flex;
-    padding: 50px;
-    margin: 50px;
+    padding: 30px;
+    margin: 30px;
     justify-content: center;
+    flex-wrap: wrap;
     color: #E0E0E0;
 }
 
-.insiders {
-    padding: 60px;
+.insiders, .vsdev {
+    padding: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #E0E0E0;
 }
 
-.previous_versions {
+.previous_versions, .insiders_build, .vscodedev {
     color: #0B66FE;
-}
-
-.vsdev {
-    text-align: center;
-    padding: 60px;
-    font-size: 30px;
-    color: #E0E0E0;
-}
-
-.insiders_1 {
-    font-size: 20px;
-    color: #E0E0E0;
-}
-
-.insiders_build {
-    color: #0077FF;
-    font-size: 20px;
-}
-
-.vscodedev {
-    color: #0077FF;
+    font-size: medium;
 }
 
 .prev_ver {
@@ -253,38 +187,73 @@ input:focus {
 }
 
 .socials {
-    padding: 100px;
+    padding: 50px;
 }
 
 .Github {
-    margin: 20px;
+    margin: 15px;
 }
 
 .Microsoft {
-    float: right;
+    float: none;
+    text-align: center;
     color: #E0E0E0;
 }
 
 .footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.support {
-    padding: 0px 20px 0px 0px;
-    color: #B0B0B0;
-}
-
-.Terms {
-    padding: 0px 0px 0px 20px;
-    color: #B0B0B0;
-}
-
-.license {
-    padding: 0px 0px 0px 20px;
+.support, .Terms, .license {
+    padding: 10px 0px;
+    text-align: center;
     color: #B0B0B0;
 }
 
 .links {
     text-decoration: none;
     color: #E0E0E0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .container, .search_download, .OS, .updates, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 10px 0px;
+    }
+
+    .nav_items {
+        font-size: medium;
+        margin: 10px 0px;
+    }
+
+    .vs_code {
+        font-size: 30px;
+    }
+
+    .heading_main {
+        margin: 0px 0px -15px 0px;
+    }
+
+    .para_under_vscode {
+        margin: -15px 0px 0px 0px;
+    }
+
+    .OS, .windows, .linux, .mac_logo {
+        margin: 20px 0px;
+    }
+
+    .support, .Terms, .license {
+        padding: 5px 0px;
+    }
+
+    .socials {
+        padding: 20px;
+    }
 }
